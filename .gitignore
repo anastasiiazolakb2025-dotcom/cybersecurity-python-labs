@@ -1,0 +1,19 @@
+# Automatically created by ruff.
+*# Віртуальне середовище
+.venv/
+venv/
+
+# Кеш Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# IDE
+.vscode/
+.idea/
+
+# === Дані лабораторних (генеруються динамічно) ===
+labs/*/data/
+
+# Ruff cache
+.ruff_cache/
