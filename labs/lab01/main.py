@@ -14,20 +14,19 @@ def print_header() -> None:
     print(f"Варіант: {VARIANT_NUMBER}")
 
 
+
 def run_task(module_name: str, title: str) -> None:
     print(f"# {title}")
+
 
     try:
         module = __import__(module_name, fromlist=["main"])
         module.main()
     except ImportError as e:
         print(f"Помилка імпорту модуля {module_name}: {e}")
-    except Exception as e:
-        print(f"Помилка виконання {module_name}: {e}")
 
 
 def main() -> None:
-    """Головна функція — запускає всі три завдання."""
     print_header()
 
     run_task("task1", "Завдання 1: Аналізатор надійності паролів")
@@ -35,6 +34,7 @@ def main() -> None:
     run_task("task3", "Завдання 3: Хешування, CSV-база та JSON-логування")
 
     print("Усі завдання виконано!")
+
 
 if __name__ == "__main__":
     main()
