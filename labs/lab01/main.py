@@ -14,10 +14,8 @@ def print_header() -> None:
     print(f"Варіант: {VARIANT_NUMBER}")
 
 
-
 def run_task(module_name: str, title: str) -> None:
     print(f"# {title}")
-
 
     try:
         module = __import__(module_name, fromlist=["main"])

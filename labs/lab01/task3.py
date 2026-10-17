@@ -3,7 +3,7 @@ import hashlib
 import json
 import os
 import sys
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../..")))
 
@@ -49,7 +49,7 @@ def log_event(func):
             "event": "login",
             "user": args[0] if args else "unknown",
             "result": "success" if result else "failure",
-            "timestamp": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S"),
+            "timestamp": datetime.now(UTC).strftime("%Y-%m-%d %H:%M:%S"),
             "args": list(args),
             "kwargs": kwargs,
         }
