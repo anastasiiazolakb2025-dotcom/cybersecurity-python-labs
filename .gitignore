@@ -12,8 +12,12 @@ __pycache__/
 .vscode/
 .idea/
 
-# === Дані лабораторних (генеруються динамічно) ===
+# Дані лабораторних (генеруються динамічно)
 labs/*/data/
 
 # Ruff cache
 .ruff_cache/
+labs/lab03/data/*.sqlite3
+labs/lab03/data/*.sqlite3-*
+labs/lab03/data/*.db
+labs/lab03/data/*.db-*
