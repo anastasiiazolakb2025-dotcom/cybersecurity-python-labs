@@ -21,3 +21,9 @@ labs/lab03/data/*.sqlite3
 labs/lab03/data/*.sqlite3-*
 labs/lab03/data/*.db
 labs/lab03/data/*.db-*
+
+# pytest
+.pytest_cache/
+
+# ЛР4: синтетичні дані мають бути в Git
+!labs/lab04/data/
